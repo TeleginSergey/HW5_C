@@ -7,8 +7,10 @@ struct Move
 };
 
 struct Move getFinishPoint(struct Move arr[], int n){
+    //структура, в которой мы будем все высчитывать
     struct Move FinishPoint = {0, 0};
     for (int i=0; i <n; i++){
+        //просчитываем расстояние по x и по y
         FinishPoint.x += arr[i].x;
         FinishPoint.y += arr[i].y;
     }
